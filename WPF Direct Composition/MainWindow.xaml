@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPF_Direct_Composition.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Direct_Composition"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Background="AliceBlue" Height="20" Grid.Row="0">
+            <MenuItem Header="Drop Down 1">
+                <MenuItem Header="a"/>
+                <MenuItem Header="b"/>
+            </MenuItem>
+            <MenuItem Header="Drop Down 2">
+                <MenuItem Header="A"/>
+                <MenuItem Header="B"/>
+            </MenuItem>
+            <MenuItem Header="Drop Down 3">
+                <MenuItem Header="A"/>
+                <MenuItem Header="B"/>
+            </MenuItem>
+            <MenuItem Header="Drop Down 4">
+                <MenuItem Header="A"/>
+                <MenuItem Header="B"/>
+            </MenuItem>
+        </Menu>
+        <Button Grid.Row="1">
+            Hi
+        </Button>
+    </Grid>
+</Window>
